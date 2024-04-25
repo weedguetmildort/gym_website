@@ -1,9 +1,11 @@
-import { SlctdPage } from "@/shared/types"
+import { SlctdPage } from "@/shared/types";
+import { motion } from "framer-motion";
 import { 
     HomeModernIcon,
     UserGroupIcon,
     AcademicCapIcon
-} from "@heroicons/react/24/solid"
+} from "@heroicons/react/24/solid";
+
 
 type Props = {
     setSelectedPage: ( value: SlctdPage) => void;
@@ -11,11 +13,12 @@ type Props = {
 
 const Benefits = ( { setSelectedPage }: Props) => {
   return (
-    <section
-        id="benefits"
-        className="mx-auto min-h-full"
-    >
-        
+    <section id="benefits" className="mx-auto min-h-full w-5/6 py-20">
+        <motion.div
+            onViewportEnter={() => setSelectedPage(SlctdPage.Benefits)}
+        >
+            
+        </motion.div>
     </section>
   )
 }
