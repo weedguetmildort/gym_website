@@ -1,5 +1,5 @@
 import { SlctdPage, BenefitType } from "@/shared/types";
-import { motion, stagger } from "framer-motion";
+import { motion } from "framer-motion";
 import { 
     HomeModernIcon,
     UserGroupIcon,
